@@ -11,7 +11,7 @@ class MusicController extends BaseController
     {
         $main = new MusicPlayerModel();
         $data['Main'] = $main->findAll();
-        $data['mus'] = [];
+        $data['Music'] = [];
         return view('Main', $data);
     }
 }
